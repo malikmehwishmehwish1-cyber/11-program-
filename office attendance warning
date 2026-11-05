@@ -1,0 +1,20 @@
+// ============================================
+// Program 6: Parking Fee Discount
+// ============================================
+#include <iostream>
+using namespace std;
+
+int main() {
+    float hours;
+    int isStudent;
+    
+    cout << "Enter hours vehicle has been parked: ";
+    cin >> hours;
+    cout << "Are you a student? Enter 1 for Yes, 0 for No: ";
+    cin >> isStudent;
+
+    if (isStudent == 1 && hours >= 2) {
+        cout << "Student Parking Discount Applicable";
+    }
+    return 0;
+}
